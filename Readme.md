@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/29/user/1117947).
+* Студент: [Данияр Сеферов](https://up.htmlacademy.ru/htmlcss/29/user/1117947).
 * Наставник: [Мурат Баркинхоев](https://htmlacademy.ru/profile/id186857).
 
 ---
