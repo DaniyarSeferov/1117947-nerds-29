@@ -117,8 +117,8 @@
         <li><a class="sort-filters-item">По типу</a></li>
         <li><a class="sort-filters-item">По названию</a></li>
       </ul>
-      <span class="sort-filters-icon sort-filters-icon-up"></span>
       <span class="sort-filters-icon sort-filters-icon-down"></span>
+      <span class="sort-filters-icon sort-filters-icon-up"></span>
     </section>
 
     <section class="templates">
@@ -196,7 +196,7 @@
 
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae85629ee6df1985eabd616716ab0fdefa77d0dfe33d69f1842db1e737cafbe21&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
     <div class="container">
       <address>
         <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
@@ -223,7 +223,7 @@
   </section>
 </footer>
 
-<section class="modal modal-message">
+<section class="modal modal-message visually-hidden">
   <h2>Напишите нам</h2>
   <!-- Здесь будет форма отправки сообщения -->
   <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
@@ -242,7 +242,7 @@
 
     <button class="button button-red" type="submit">Отправить</button>
   </form>
-  <button type="button" class="modal-close">Закрыть</button>
+  <a class="modal-close" href="#">+</a>
 </section>
 </body>
 </html>
