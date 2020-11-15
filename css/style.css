@@ -244,12 +244,14 @@ img {
 /* Top slider */
 
 .top-slider {
+  position: relative;
   background-color: var(--basic-grey);
 }
 
 .top-slider-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .top-slider-title {
@@ -282,6 +284,39 @@ img {
 .top-slider-item .button {
   padding: 16px 55px;
 }
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 50%;
+  z-index: 20;
+  display: flex;
+  width: 67px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .current {
+  background-color: #FFFFFF;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: grid;
+}
+
 
 
 /* Services */
@@ -839,6 +874,92 @@ img {
   background: var(--basic-extra-dark-grey);
   box-shadow: inset 0px 3px 0px var(--basic-grey-breadcrumbs);
 }
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #D7DCDE;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00CA74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #FFFFFF;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  font-family: inherit;
+  font-size: inherit;
+}
+
 
 
 /* Sort filters */

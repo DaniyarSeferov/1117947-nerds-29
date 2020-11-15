@@ -35,22 +35,25 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
 
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="filter-item">
           <legend>Стоимость:</legend>
-          <ul class="price">
-            <li class="filter-option filter-text">
-              <label class="visually-hidden" for="filter-price-range">Цена</label>
-              <input class="filter-input filter-input-range" type="range" name="price-range" id="filter-price-range">
-            </li>
-            <li class="filter-option filter-text">
-              <label for="filter-price-from">от</label>
-              <input class="filter-input filter-input-text" type="text" name="price-from" id="filter-price-from">
-            </li>
-            <li class="filter-option filter-text">
-              <label for="filter-price-to">до</label>
-              <input class="filter-input filter-input-text" type="text" name="price-to" id="filter-price-to">
-            </li>
-          </ul>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset>
