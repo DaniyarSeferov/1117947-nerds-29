@@ -845,16 +845,93 @@ img {
 
 /* Filters */
 
+.filters {
+  width: 260px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0 0 43px 0;
+  border: none;
+}
+
+.filter fieldset:first-child {
+  margin-bottom: 54px;
+}
+
 .filter legend {
+  margin-bottom: 14px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
 .filter ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
   line-height: 19px;
+}
+
+.filter-option {
+  margin-bottom: 19px;
+  padding-left: 36px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4D4D4D;
+  border-radius: 4px;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -35px;
+  width: 21px;
+  height: 18px;
+  background: url("../img/icons/shape.svg") 50% 50% no-repeat;
+  opacity: 0.4;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4D4D4D;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -30px;
+  width: 8px;
+  height: 8px;
+  background-color: #4D4D4D;
+  border-radius: 50%;
+  opacity: 0.4;
 }
 
 .filter-button {
@@ -875,6 +952,7 @@ img {
   box-shadow: inset 0px 3px 0px var(--basic-grey-breadcrumbs);
 }
 
+/* Range */
 .filter-item {
   margin: 0;
   padding: 0;
